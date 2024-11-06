@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photoviewer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+</head>
+
+<body>
+    <div id=container>
+        <h2 id="photo_title">
+            <u>Photo Viewer</u>
+        </h2>
+
+        <div id="photo_container">
+            <img src="InitialImage.jpg" id="umd" alt="umd_image" onclick="next_photo()">
+        </div>
+     
+
+        <fieldset>
+            <legend><b>Status</b></legend>
+            Photo Being Displayed: <input id="photo_display" type="text" name="photo_display" required readonly>
+            <div id="photo_view">
+                Photo View System
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Loading Images (Local Folder)</b></legend>
+            Photo's Folder: <input type="text" value="umcp/" name="photo_folder" required>
+            Common Name: <input type="text" value="college" name="common_name" required>
+            <br> Start Photo Number: <input type="text" value="2" name="start_photo" required>
+            End Photo Number: <input type="text" name="end_photo" value="4" required><br>
+            <input id="load_photos_button" type="button" value="Load Photos" onclick="load_from_local()">
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Loading Images (JSON File)</b></legend>
+            URL: <input id="load_image_with_json" type="text"
+                value="http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/imagesSet1.json"
+                name="load_image_with_json" required>
+            <input id = "url_button" type="button" value="Load JSON" onclick="load_from_json()">
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Iterating</b></legend>
+            <input id="prev_photo" type="button" value="Previous Photo" onclick="prev_photo()">
+            <input id="next_photo" type="button" value="Next Photo" onclick="next_photo()">
+            <input id="first_photo" type="button" value="First Photo"  onclick="first_photo()" >
+            <input id="last_photo" type="button" value="Last Photo" onclick="last_photo()">
+        </fieldset>
+
+        <fieldset>
+            <legend><b>SlideShows</b></legend>
+            <input id="slide_show" type="button" value="SlideShow" onclick="show_slide_show()">
+            <input id="random_slide_show" type="button" value="RandomSlideShow" onclick="random_slide_show()">
+            <input id="stop_slide_show" type="button" value="StopSlideShow" onclick="stop_slide_show()" >
+        </fieldset>
+
+        <hr>
+
+        <input id="reset_form" type="reset" value="Reset Form Values" onclick="reset()">
+    </div>
+
+</body>
+
+</html>

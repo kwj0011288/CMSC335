@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>RemoveAll</title>
+</head>
+
+<body>
+	<h1>Removing All Applicants</h1>
+    <form action="http://localhost:<%- portNumber %>/processAdminRemove" method="post">
+        <input type="submit" id="remove" value="Remove all applicants" onclick = "removePopUp()">
+    </form>  
+    <hr>
+    <a href="/">HOME</a>
+</body>
+
+<script>
+    function removePopUp(){
+        let message = "Are you sure you want to remove all applications?";
+        if(confirm(message) === true){
+            return true;
+        } else{
+            return false;
+        }
+    }
+</script>
+
+</html>

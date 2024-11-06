@@ -1,0 +1,30 @@
+<!-- You implement -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terp Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id=background>
+        <h1>
+            <strong><u>Terp Store</u></strong>
+        </h1>
+        <div class="middle">
+            <a href="catalogInquiry.shtml"> <u> Catalog Inquiry</u> </a>
+            <br>
+            <a href="placingOrder.shtml"> <u> Placing Order</u> </a>
+        </div>
+        <div id=bottom>
+            <!--#include virtual="footer.shtml" -->
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+/* Do not remove this rule */
+
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+
+    width: 65rem;
+    align-items: center;
+
+    background-color: white;
+}
+
+#photo_display {
+    width: 70%;
+}
+
+#container {
+    padding: 1rem 1rem 1rem 1rem;
+    border: 0.75rem solid brown;
+    background-color: white;
+    border-style: groove;
+    border-width: 0.75rem;
+}
+
+
+#photo_container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+    width: 80%;
+    border: 0.75rem;
+    border-style: double;
+}
+
+#photo_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+#photo_view {
+    color: red;
+}
+
+
+
+#load_image_with_json {
+    width: 82%;
+}
+
+input[type="button"] {
+    box-shadow: 0 8px 8px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="reset"] {
+    box-shadow: 0 8px 8px 6px rgba(0, 0, 0, 0.1);
+}

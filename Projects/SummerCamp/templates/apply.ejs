@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Application</title>
+</head>
+
+<body>
+	<h1>Application</h1>
+    
+    <form action="http://localhost:<%- portNumber %>/processApplication" method="post">
+        <fieldset>
+            <strong>Name: </strong><input type="text" name="name"> <strong>Email Address: </strong><input type="email" name="email"><br><br>
+            <strong>GPA: </strong><input type="text" name="gpa"><br><br>
+            <strong>Background Information: </strong><br>
+            <textarea rows="10" cols="50" name="background"></textarea>
+        </fieldset>
+        <br>
+        <input type="reset" value = "Reset">
+        <input type="submit" id="submitApplication" value="Submit Application" onclick = "confirmPopUp()">
+    </form>
+    <hr>
+    <a href="/">HOME</a>
+</body>
+
+<script> 
+    function confirmPopUp(){
+        let message = "Are you sure you want to submit your application? \nYou will not be able to change your information once submitted.";
+        if(confirm(message) === true){
+            return true;
+        } else{
+            return false;
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,71 @@
+/* Do not remove this rule */
+
+html {
+    font-size: 14px;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    border-color: brown;
+    border-width: 0.5rem;
+    border-style: double;
+    width: 50rem;
+
+    background-color: antiquewhite;
+}
+
+#container {
+    padding: 5rem 3rem 3rem 3rem;
+
+    border: 0.75rem solid blue;
+    background-color: white;
+    border-style: ridge;
+    border-width: 0.75rem;
+}
+
+/* Banner image and the tile*/
+.globe{
+    height: 6rem;
+}
+
+.deptcs {
+    height: 5rem;
+    width: 35rem;
+}
+
+#details {
+    color: brown;
+}
+#details::first-letter {
+    font-size: 2rem; 
+}
+
+.tableTitle {
+    font-size: 1rem;
+    color: blue;
+    display: inline;
+}
+
+table, th, td {
+    border: 0.1rem solid gray;
+}
+thead {
+    color: brown;
+    background-color: antiquewhite;
+}
+#add_info {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: brown;
+}
+
+#copyright {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+#developed {
+    font-size: 1rem;
+    font-weight: lighter;
+}
